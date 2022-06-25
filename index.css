@@ -5,28 +5,25 @@
 }
 
 body {
-    /* background-color: rgb(218, 211, 211); */
-    font-size: 16px;
-    min-height: 100vh;
-    background: url("bg-intro-desktop.png") no-repeat center;
-    background-size: cover;
     background-color: hsl(0, 100%, 74%);
+    background-image: url(bg-intro-desktop.png);
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    font-size: 16px;
 }
 
-.parent {
+.main {
     width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
-    background-blend-mode: overlay;
 }
 
-.container-1 {
+.writeup {
     color: white;
     padding: 20px;
     padding-left: 40px;
@@ -34,44 +31,45 @@ body {
     width: 50%;
 }
 
-h2 {
-    margin-bottom: 20px;
-    /* text-align: justify; */
+h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     display: block;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
-#container1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+.text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
 }
 
-.container-2 {
+.container {
     width: 50%;
     padding-right: 50px;
 }
 
-#container2 {
+#button1 {
     color: white;
-    border: 1px solid rgb(93, 84, 163);
+    background-color: hsl(248, 32%, 49%);
+    border: 1px solid hsl(248, 32%, 49%);
     border-radius: 5px;
-    background-color: rgb(93, 84, 163);
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-align: center;
     margin-bottom: 15px;
     box-shadow: 0 3px rgb(178, 97, 124);
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 section {
-    border: 1px solid white;
-    padding: 30px;
     background-color: white;
+    border: 1px solid white;
     border-radius: 5px;
     height: 80%;
+    padding: 30px;
     box-shadow: 0 3px rgb(178, 97, 124);
 }
 
@@ -81,25 +79,29 @@ section {
 .password {
     margin-bottom: 10px;
     width: 100%;
-    padding: 10px;
+    padding: 13px;
     border: 1px solid rgb(245, 235, 235);
     border-radius: 5px;
+    font-weight: 600;
+    font-size: 11px;
+    padding-left: 20px;
 }
 
 input:focus {
+    border: 1px solid hsl(246, 25%, 77%);
     outline: 0;
-    border: 1px solid rgb(93, 84, 163);
 }
 
-button {
+#button2 {
     width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
     background-color: hsl(154, 59%, 51%);
     border: 1px solid hsl(154, 59%, 51%);
-    border-radius: 5px;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
     box-shadow: 0 2px green;
+    cursor: pointer;
 }
 
 footer {
@@ -114,21 +116,21 @@ a {
     color: hsl(0, 100%, 74%);
 }
 
-@media screen and (max-width: 422px) {
-    .parent {
+@media screen and (max-width: 400px) {
+    .main {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 1rem;
     }
-    .container-1 {
+    .writeup {
+        width: 100%;
         padding: 20px;
         padding-left: 40px;
         padding-right: 30px;
-        width: 100%;
         text-align: center;
     }
-    .container-2 {
+    .container {
         width: 100%;
         padding-right: 0;
     }
