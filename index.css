@@ -126,12 +126,11 @@ a {
     .writeup {
         width: 100%;
         padding: 20px;
-        padding-left: 40px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 10px;
         text-align: center;
     }
     .container {
         width: 100%;
-        padding-right: 0;
     }
 }
